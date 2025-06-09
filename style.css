@@ -1,0 +1,145 @@
+/* === Reset básico === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Tipografía y colores base === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #071739;
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  color: #4B6382;
+  margin-bottom: 0.5rem;
+}
+
+/* === Enlaces === */
+a {
+  color: #071739;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #A68868;
+}
+
+/* === Header === */
+header {
+  background-color: #CDD5DB;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+/* === Main general === */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+/* === Secciones === */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* === Imagen de perfil (Inicio) === */
+.perfil-img {
+  display: block;
+  max-width: 200px;
+  margin: 1.5rem auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* === Portafolio Grid === */
+.proyectos {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.proyecto {
+  background-color: #E3C39D;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.proyecto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.proyecto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* === Formulario === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+button {
+  padding: 0.8rem;
+  background-color: #4B6382;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #A68868;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #CDD5DB;
+  font-size: 0.9rem;
+}
+
+/* === Responsive: Tablets === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* === Responsive: Móviles === */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .perfil-img {
+    max-width: 150px;
+  }
+}
