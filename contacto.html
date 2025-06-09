@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto | Juan Manuel</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Juan Manuel</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -12,32 +12,48 @@
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="presentacion.html">Presentación</a></li>
+        <li><a href="sobremi.html">Sobre mí</a></li>
         <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Contáctame</h2>
-      <form>
-        <label for="nombre">Nombre:</label>
+  <main class="contacto">
+    <h2>¿Quieres contactarme?</h2>
+    <p>Estoy disponible para nuevos proyectos, colaboraciones, prácticas o cualquier oportunidad relacionada con desarrollo web. Si tienes una idea, un trabajo o simplemente quieres saludar, no dudes en escribirme.</p>
+
+    <section class="info-contacto">
+      <h3>Información de contacto</h3>
+      <p><strong>Ubicación:</strong> Envigado, Antioquia, Colombia</p>
+      <p><strong>Correo:</strong> juanma.arango99@example.com</p>
+      <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+      <div class="redes">
+        <a href="https://github.com" target="_blank"><img src="github.svg" alt="GitHub"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://instagram.com" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h3>Formulario de contacto</h3>
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo</label>
         <input type="text" id="nombre" name="nombre" required>
 
-        <label for="correo">Correo:</label>
+        <label for="correo">Correo electrónico</label>
         <input type="email" id="correo" name="correo" required>
 
-        <label for="mensaje">Mensaje:</label>
+        <label for="mensaje">Mensaje</label>
         <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="btn">Enviar mensaje</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Juan Manuel Arango Arana. Todos los derechos reservados.</p>
+    <p>Gracias por visitar mi sitio. ¡Hablemos pronto!</p>
   </footer>
 </body>
 </html>
