@@ -1,44 +1,46 @@
-<!-- portafolio.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portafolio | Juan Manuel</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>Portafolio - Juan Manuel</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Portafolio de Proyectos</h1>
+    <h1>Mi Portafolio</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="presentacion.html">Presentación</a></li>
+        <li><a href="sobremi.html">Sobre mí</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="proyectos">
-      <article class="proyecto">
-        <img src="img/proyecto1.png" alt="Proyecto 1">
-        <h3>Gestor de Inventarios</h3>
-        <p>Aplicación en Python para registrar, actualizar y gestionar productos de un inventario.</p>
-      </article>
-      <article class="proyecto">
-        <img src="img/proyecto2.png" alt="Proyecto 2">
-        <h3>Landing Page de Evento</h3>
-        <p>Sitio web responsivo con registro para eventos, testimonios y formulario con HTML y CSS puro.</p>
-      </article>
-      <article class="proyecto">
-        <img src="img/proyecto3.png" alt="Proyecto 3">
+
+  <section class="portafolio">
+    <h2>Proyectos destacados</h2>
+    <div class="proyectos">
+      <div class="card">
+        <h3>Landing Page para Evento</h3>
+        <p>Una landing page completamente responsive, desarrollada en HTML y CSS siguiendo metodologías como BEM e ITCSS. Incluye modo oscuro, formulario de registro, carrusel en CSS y está pensada para ser accesible y funcional en cualquier dispositivo.</p>
+      </div>
+
+      <div class="card">
+        <h3>Gestión de Inventario en Python</h3>
+        <p>Un sistema de consola creado en Python que permite registrar productos, actualizar información, eliminar y calcular el valor total del inventario. Utiliza estructuras como listas, diccionarios, funciones y manejo de datos para una gestión eficiente.</p>
+      </div>
+
+      <div class="card">
         <h3>Calculadora Financiera</h3>
-        <p>Herramienta en HTML, CSS y JavaScript para ayudar a los usuarios a planear sus ahorros mensuales.</p>
-      </article>
-    </section>
-  </main>
+        <p>Una herramienta práctica para ayudar a los usuarios a calcular cuánto pueden ahorrar según sus ingresos y gastos mensuales. Desarrollada con una interfaz web clara y amigable, ideal para principiantes en el mundo de las finanzas personales.</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Juan Manuel Arango Arana</p>
+    <p>Juan Manuel Arango Arana - Portafolio Web</p>
   </footer>
 </body>
 </html>
